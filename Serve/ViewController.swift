@@ -10,6 +10,8 @@ import Cocoa
 
 class ViewController: NSViewController {
 
+    fileprivate lazy var socketManager = ZYSocketManager()
+    @IBOutlet weak var statusLab: NSTextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,5 +25,14 @@ class ViewController: NSViewController {
     }
 
 
+    
+    @IBAction func startRun(_ sender: Any) {
+        statusLab.stringValue = "服务器正在运行"
+        socketManager.startRunning()
+    }
+    @IBAction func stopRun(_ sender: Any) {
+        statusLab.stringValue = "服务器停止运行"
+        socketManager.stopRunning()
+    }
 }
 

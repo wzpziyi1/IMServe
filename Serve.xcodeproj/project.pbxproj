@@ -19,6 +19,8 @@
 		09029D5E1ECAEBAE004EE3B0 /* ytcpsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09029D591ECAEBAE004EE3B0 /* ytcpsocket.swift */; };
 		09029D5F1ECAEBAE004EE3B0 /* yudpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 09029D5A1ECAEBAE004EE3B0 /* yudpsocket.c */; };
 		09029D601ECAEBAE004EE3B0 /* yudpsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09029D5B1ECAEBAE004EE3B0 /* yudpsocket.swift */; };
+		092818B91ECCAADE00F7A458 /* ZYSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092818B81ECCAADE00F7A458 /* ZYSocketManager.swift */; };
+		092818BF1ECCB3F200F7A458 /* ZYClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092818BE1ECCB3F200F7A458 /* ZYClientManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		09029D591ECAEBAE004EE3B0 /* ytcpsocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ytcpsocket.swift; sourceTree = "<group>"; };
 		09029D5A1ECAEBAE004EE3B0 /* yudpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yudpsocket.c; sourceTree = "<group>"; };
 		09029D5B1ECAEBAE004EE3B0 /* yudpsocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = yudpsocket.swift; sourceTree = "<group>"; };
+		092818B81ECCAADE00F7A458 /* ZYSocketManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYSocketManager.swift; sourceTree = "<group>"; };
+		092818BE1ECCB3F200F7A458 /* ZYClientManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYClientManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +144,8 @@
 			isa = PBXGroup;
 			children = (
 				09029D561ECAEBAE004EE3B0 /* ysocket */,
+				092818B81ECCAADE00F7A458 /* ZYSocketManager.swift */,
+				092818BE1ECCB3F200F7A458 /* ZYClientManager.swift */,
 			);
 			path = ZYSocket;
 			sourceTree = "<group>";
@@ -295,7 +301,9 @@
 				09029D5E1ECAEBAE004EE3B0 /* ytcpsocket.swift in Sources */,
 				09029D081ECAE657004EE3B0 /* ViewController.swift in Sources */,
 				09029D061ECAE657004EE3B0 /* AppDelegate.swift in Sources */,
+				092818B91ECCAADE00F7A458 /* ZYSocketManager.swift in Sources */,
 				09029D5C1ECAEBAE004EE3B0 /* ysocket.swift in Sources */,
+				092818BF1ECCB3F200F7A458 /* ZYClientManager.swift in Sources */,
 				09029D0B1ECAE657004EE3B0 /* Serve.xcdatamodeld in Sources */,
 				09029D5D1ECAEBAE004EE3B0 /* ytcpsocket.c in Sources */,
 				09029D601ECAEBAE004EE3B0 /* yudpsocket.swift in Sources */,
@@ -547,6 +555,7 @@
 				09029D2C1ECAE657004EE3B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		09029D2D1ECAE657004EE3B0 /* Build configuration list for PBXNativeTarget "ServeTests" */ = {
 			isa = XCConfigurationList;
@@ -555,6 +564,7 @@
 				09029D2F1ECAE657004EE3B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		09029D301ECAE657004EE3B0 /* Build configuration list for PBXNativeTarget "ServeUITests" */ = {
 			isa = XCConfigurationList;
@@ -563,6 +573,7 @@
 				09029D321ECAE657004EE3B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
