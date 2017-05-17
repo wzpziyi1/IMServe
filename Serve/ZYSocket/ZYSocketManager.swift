@@ -54,5 +54,7 @@ extension ZYSocketManager {
         
         //保存所以的clientMgr，以便操作
         clientMgrArr.append(clientMgr)
+        
+        clientMgr.readMessage()
     }
 }
