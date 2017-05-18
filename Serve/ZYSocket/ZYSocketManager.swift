@@ -31,8 +31,11 @@ extension ZYSocketManager {
             //需要接受多个客户端的连接，并且是一直接受，不能卡主线
             while(self.isServeRunning) {
                 if let client = self.server.accept() {
-                    print("接收到一个客户端连接")
-                    self.dealupClient(client: client)
+                    
+                    //在处理消息时，会接受一个客户端的许多消息，不能让它卡住这个线程，放到其他子线程里面做
+                    DispatchQueue.global().async {
+                        self.dealupClient(client: client)
+                    }
                 }
             }
             
