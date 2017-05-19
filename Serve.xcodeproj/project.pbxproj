@@ -21,6 +21,7 @@
 		09029D601ECAEBAE004EE3B0 /* yudpsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09029D5B1ECAEBAE004EE3B0 /* yudpsocket.swift */; };
 		092818B91ECCAADE00F7A458 /* ZYSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092818B81ECCAADE00F7A458 /* ZYSocketManager.swift */; };
 		092818BF1ECCB3F200F7A458 /* ZYClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092818BE1ECCB3F200F7A458 /* ZYClientManager.swift */; };
+		09E2E35B1ECEEF99007015E9 /* ProtocolBuffers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09E2E3561ECEEF88007015E9 /* ProtocolBuffers.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,41 @@
 			proxyType = 1;
 			remoteGlobalIDString = 09029D011ECAE657004EE3B0;
 			remoteInfo = Serve;
+		};
+		09E2E3511ECEEF88007015E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09E2E3491ECEEF88007015E9 /* ProtocolBuffers.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3F85569919C71BCF003802F2;
+			remoteInfo = ProtocolBuffers;
+		};
+		09E2E3531ECEEF88007015E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09E2E3491ECEEF88007015E9 /* ProtocolBuffers.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3F8556A419C71BCF003802F2;
+			remoteInfo = UnitTesting;
+		};
+		09E2E3551ECEEF88007015E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09E2E3491ECEEF88007015E9 /* ProtocolBuffers.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3F41061C1A1A667700742090;
+			remoteInfo = "ProtocolBuffers(OSX)";
+		};
+		09E2E3571ECEEF88007015E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09E2E3491ECEEF88007015E9 /* ProtocolBuffers.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3F4106261A1A667800742090;
+			remoteInfo = "UnitTesting(OSX)";
+		};
+		09E2E3591ECEEF88007015E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09E2E3491ECEEF88007015E9 /* ProtocolBuffers.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3F31A1A91BA199C000F477C1;
+			remoteInfo = "ProtocolBuffers(watchOS)";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -61,6 +97,7 @@
 		09029D5B1ECAEBAE004EE3B0 /* yudpsocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = yudpsocket.swift; sourceTree = "<group>"; };
 		092818B81ECCAADE00F7A458 /* ZYSocketManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYSocketManager.swift; sourceTree = "<group>"; };
 		092818BE1ECCB3F200F7A458 /* ZYClientManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYClientManager.swift; sourceTree = "<group>"; };
+		09E2E3491ECEEF88007015E9 /* ProtocolBuffers.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = ProtocolBuffers.xcodeproj; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09E2E35B1ECEEF99007015E9 /* ProtocolBuffers.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +156,7 @@
 				09029D0E1ECAE657004EE3B0 /* Main.storyboard */,
 				09029D111ECAE657004EE3B0 /* Info.plist */,
 				09029D091ECAE657004EE3B0 /* Serve.xcdatamodeld */,
+				09E2E3491ECEEF88007015E9 /* ProtocolBuffers.xcodeproj */,
 			);
 			path = Serve;
 			sourceTree = "<group>";
@@ -160,6 +199,18 @@
 				09029D5B1ECAEBAE004EE3B0 /* yudpsocket.swift */,
 			);
 			path = ysocket;
+			sourceTree = "<group>";
+		};
+		09E2E34A1ECEEF88007015E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09E2E3521ECEEF88007015E9 /* ProtocolBuffers.framework */,
+				09E2E3541ECEEF88007015E9 /* ProtocolBuffersTests.xctest */,
+				09E2E3561ECEEF88007015E9 /* ProtocolBuffers.framework */,
+				09E2E3581ECEEF88007015E9 /* UnitTesting(OSX).xctest */,
+				09E2E35A1ECEEF88007015E9 /* ProtocolBuffers.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +309,12 @@
 			mainGroup = 09029CF91ECAE657004EE3B0;
 			productRefGroup = 09029D031ECAE657004EE3B0 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 09E2E34A1ECEEF88007015E9 /* Products */;
+					ProjectRef = 09E2E3491ECEEF88007015E9 /* ProtocolBuffers.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				09029D011ECAE657004EE3B0 /* Serve */,
@@ -266,6 +323,44 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		09E2E3521ECEEF88007015E9 /* ProtocolBuffers.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ProtocolBuffers.framework;
+			remoteRef = 09E2E3511ECEEF88007015E9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		09E2E3541ECEEF88007015E9 /* ProtocolBuffersTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ProtocolBuffersTests.xctest;
+			remoteRef = 09E2E3531ECEEF88007015E9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		09E2E3561ECEEF88007015E9 /* ProtocolBuffers.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ProtocolBuffers.framework;
+			remoteRef = 09E2E3551ECEEF88007015E9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		09E2E3581ECEEF88007015E9 /* UnitTesting(OSX).xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "UnitTesting(OSX).xctest";
+			remoteRef = 09E2E3571ECEEF88007015E9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		09E2E35A1ECEEF88007015E9 /* ProtocolBuffers.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ProtocolBuffers.framework;
+			remoteRef = 09E2E3591ECEEF88007015E9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		09029D001ECAE657004EE3B0 /* Resources */ = {
