@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "3638F61D79DE1E61B0CAE27C55F47FF842701B9F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "3638F61D79DE1E61B0CAE27C55F47FF842701B9F" : 9223372036854775807,
+    "0666B8749607A9097FA47BC516240266C4E79D1D" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "FC783EAA-6B10-4E70-82E9-C9781F3C60EE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "3638F61D79DE1E61B0CAE27C55F47FF842701B9F" : "Serve\/",
+    "0666B8749607A9097FA47BC516240266C4E79D1D" : "..\/..\/Desktop\/protobuf-swift"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Serve",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Serve.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:alexeyxo\/protobuf-swift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0666B8749607A9097FA47BC516240266C4E79D1D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/wzpziyi1\/IMServe.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3638F61D79DE1E61B0CAE27C55F47FF842701B9F"
+    }
+  ]
+}
