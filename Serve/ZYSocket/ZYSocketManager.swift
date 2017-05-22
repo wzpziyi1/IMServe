@@ -54,10 +54,18 @@ extension ZYSocketManager {
     fileprivate func dealupClient(client: TCPClient) {
         //用ZYClientManager来管理client的相关操作
         let clientMgr = ZYClientManager(client: client)
-        
+        clientMgr.delegate = self
         //保存所以的clientMgr，以便操作
         clientMgrArr.append(clientMgr)
         
         clientMgr.readMessage()
+    }
+}
+
+extension ZYSocketManager: ZYClientManagerDelegate {
+    func sendMsgToClient(_ data : Data) {
+        for mgr in clientMgrArr {
+            mgr.client.send(data: data)
+        }
     }
 }

@@ -8,10 +8,18 @@
 
 import Cocoa
 
+protocol ZYClientManagerDelegate : class {
+    func sendMsgToClient(_ data : Data)
+}
+
 class ZYClientManager: NSObject {
-    fileprivate var client: TCPClient
+    
+    weak var delegate: ZYClientManagerDelegate?
+    
+    var client: TCPClient
     
     fileprivate var isClientConnecting: Bool = false
+    
     
     
     init(client: TCPClient) {
@@ -31,10 +39,10 @@ extension ZYClientManager {
                                             // 读取出来的实际是head的长度，head里面记录了真实的消息的长度
                 
                 //将字符型数组headMsg转化为data
-                let lenData = Data(bytes: headMsg, count: 4)
+                let headData = Data(bytes: headMsg, count: 4)
                 var actualLen = 0
                 //将data转化为具体的Int，head里面就是一个实际消息的长度
-                (lenData as NSData).getBytes(&actualLen, length: 4)
+                (headData as NSData).getBytes(&actualLen, length: 4)
                 
                 
                 
@@ -55,10 +63,14 @@ extension ZYClientManager {
                 let actualMsgStr = String(data: actualData, encoding: .utf8)
                 
                 print(actualMsgStr ?? "解析消息出错")
+                
+                let totalData = headData + typeData + actualData
+                delegate?.sendMsgToClient(totalData)
             }
             else {
                 isClientConnecting = false
                 print("客户端断开连接")
+                client.close()
             }
         }
         

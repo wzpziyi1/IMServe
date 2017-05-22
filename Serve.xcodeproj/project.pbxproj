@@ -20,6 +20,7 @@
 		09029D5F1ECAEBAE004EE3B0 /* yudpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 09029D5A1ECAEBAE004EE3B0 /* yudpsocket.c */; };
 		09029D601ECAEBAE004EE3B0 /* yudpsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09029D5B1ECAEBAE004EE3B0 /* yudpsocket.swift */; };
 		0905124F1ED34734006C27EA /* ProtocolBuffers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0905124A1ED34726006C27EA /* ProtocolBuffers.framework */; };
+		090512521ED3486F006C27EA /* Immessage.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090512511ED3486F006C27EA /* Immessage.proto.swift */; };
 		092818B91ECCAADE00F7A458 /* ZYSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092818B81ECCAADE00F7A458 /* ZYSocketManager.swift */; };
 		092818BF1ECCB3F200F7A458 /* ZYClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092818BE1ECCB3F200F7A458 /* ZYClientManager.swift */; };
 /* End PBXBuildFile section */
@@ -96,6 +97,7 @@
 		09029D5A1ECAEBAE004EE3B0 /* yudpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yudpsocket.c; sourceTree = "<group>"; };
 		09029D5B1ECAEBAE004EE3B0 /* yudpsocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = yudpsocket.swift; sourceTree = "<group>"; };
 		0905123D1ED34726006C27EA /* ProtocolBuffers.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ProtocolBuffers.xcodeproj; path = "../../../../Desktop/protobuf-swift/plugin/ProtocolBuffers/ProtocolBuffers.xcodeproj"; sourceTree = "<group>"; };
+		090512511ED3486F006C27EA /* Immessage.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Immessage.proto.swift; sourceTree = "<group>"; };
 		092818B81ECCAADE00F7A458 /* ZYSocketManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYSocketManager.swift; sourceTree = "<group>"; };
 		092818BE1ECCB3F200F7A458 /* ZYClientManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYClientManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -156,6 +158,7 @@
 				09029D0E1ECAE657004EE3B0 /* Main.storyboard */,
 				09029D111ECAE657004EE3B0 /* Info.plist */,
 				09029D091ECAE657004EE3B0 /* Serve.xcdatamodeld */,
+				090512511ED3486F006C27EA /* Immessage.proto.swift */,
 				0905123D1ED34726006C27EA /* ProtocolBuffers.xcodeproj */,
 			);
 			path = Serve;
@@ -402,6 +405,7 @@
 				09029D0B1ECAE657004EE3B0 /* Serve.xcdatamodeld in Sources */,
 				09029D5D1ECAEBAE004EE3B0 /* ytcpsocket.c in Sources */,
 				09029D601ECAEBAE004EE3B0 /* yudpsocket.swift in Sources */,
+				090512521ED3486F006C27EA /* Immessage.proto.swift in Sources */,
 				09029D5F1ECAEBAE004EE3B0 /* yudpsocket.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
