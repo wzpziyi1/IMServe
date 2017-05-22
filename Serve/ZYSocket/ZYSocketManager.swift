@@ -62,6 +62,7 @@ extension ZYSocketManager {
     }
 }
 
+//通过代理把消息传递给所以链接了的客户端
 extension ZYSocketManager: ZYClientManagerDelegate {
     func sendMsgToClient(_ data : Data) {
         for mgr in clientMgrArr {
