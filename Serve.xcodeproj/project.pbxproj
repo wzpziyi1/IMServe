@@ -21,8 +21,6 @@
 		09029D601ECAEBAE004EE3B0 /* yudpsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09029D5B1ECAEBAE004EE3B0 /* yudpsocket.swift */; };
 		092818B91ECCAADE00F7A458 /* ZYSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092818B81ECCAADE00F7A458 /* ZYSocketManager.swift */; };
 		092818BF1ECCB3F200F7A458 /* ZYClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092818BE1ECCB3F200F7A458 /* ZYClientManager.swift */; };
-		09D449C31ED2C3F20088D3B0 /* IMMessage.proto in Resources */ = {isa = PBXBuildFile; fileRef = 09D449C21ED2C3F20088D3B0 /* IMMessage.proto */; };
-		09D449CA1ED2C41F0088D3B0 /* Immessage.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D449C91ED2C41F0088D3B0 /* Immessage.proto.swift */; };
 		09E2E35B1ECEEF99007015E9 /* ProtocolBuffers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09E2E3561ECEEF88007015E9 /* ProtocolBuffers.framework */; };
 /* End PBXBuildFile section */
 
@@ -99,8 +97,6 @@
 		09029D5B1ECAEBAE004EE3B0 /* yudpsocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = yudpsocket.swift; sourceTree = "<group>"; };
 		092818B81ECCAADE00F7A458 /* ZYSocketManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYSocketManager.swift; sourceTree = "<group>"; };
 		092818BE1ECCB3F200F7A458 /* ZYClientManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZYClientManager.swift; sourceTree = "<group>"; };
-		09D449C21ED2C3F20088D3B0 /* IMMessage.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = IMMessage.proto; sourceTree = "<group>"; };
-		09D449C91ED2C41F0088D3B0 /* Immessage.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Immessage.proto.swift; sourceTree = "<group>"; };
 		09E2E3491ECEEF88007015E9 /* ProtocolBuffers.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = ProtocolBuffers.xcodeproj; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -160,8 +156,6 @@
 				09029D0E1ECAE657004EE3B0 /* Main.storyboard */,
 				09029D111ECAE657004EE3B0 /* Info.plist */,
 				09029D091ECAE657004EE3B0 /* Serve.xcdatamodeld */,
-				09D449C21ED2C3F20088D3B0 /* IMMessage.proto */,
-				09D449C91ED2C41F0088D3B0 /* Immessage.proto.swift */,
 				09E2E3491ECEEF88007015E9 /* ProtocolBuffers.xcodeproj */,
 			);
 			path = Serve;
@@ -373,7 +367,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09D449C31ED2C3F20088D3B0 /* IMMessage.proto in Resources */,
 				09029D0D1ECAE657004EE3B0 /* Assets.xcassets in Resources */,
 				09029D101ECAE657004EE3B0 /* Main.storyboard in Resources */,
 			);
@@ -409,7 +402,6 @@
 				09029D0B1ECAE657004EE3B0 /* Serve.xcdatamodeld in Sources */,
 				09029D5D1ECAEBAE004EE3B0 /* ytcpsocket.c in Sources */,
 				09029D601ECAEBAE004EE3B0 /* yudpsocket.swift in Sources */,
-				09D449CA1ED2C41F0088D3B0 /* Immessage.proto.swift in Sources */,
 				09029D5F1ECAEBAE004EE3B0 /* yudpsocket.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
