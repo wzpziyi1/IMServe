@@ -69,4 +69,9 @@ extension ZYSocketManager: ZYClientManagerDelegate {
             mgr.client.send(data: data)
         }
     }
+    
+    func removeClient(client: ZYClientManager) {
+        guard let index = clientMgrArr.index(of: client) else { return }
+        clientMgrArr.remove(at: index)
+    }
 }
