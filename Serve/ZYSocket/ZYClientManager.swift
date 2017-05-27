@@ -95,6 +95,8 @@ extension ZYClientManager {
         if heartTimeCount >= 10 {
             self.removeClient()
         }
+        
+        print("收到心跳包")
     }
     
     private func removeClient() {
